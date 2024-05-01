@@ -14,20 +14,58 @@
     <title>Password Generator</title>
   </head>
   <body>
-    <div class="container">
-      <div class="heding">
-        <h1>
-          Generate a <br />
-          <span>Random Password</span>
-        </h1>
+    <div class="main">
+      <div class="box">
+        <span id="pass-box">Testing</span>
+        <div class="row">
+          <div class="left">Password Length</div>
+          <div class="right">
+            <input
+              type="number"
+              name=""
+              id="total-char"
+              max="30"
+              min="2"
+              value="10"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <label for="upper-case">
+            <div class="left">Contains Uppercase</div>
+          </label>
+          <div class="right">
+            <input type="checkbox" name="" id="upper-case" checked />
+          </div>
+        </div>
+        <div class="row">
+          <label for="lower-case">
+            <div class="left">Contains Lowercase</div>
+          </label>
+          <div class="right">
+            <input type="checkbox" name="" id="lower-case" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="numbers">
+            <div class="left">Contains Numbers</div>
+          </label>
+          <div class="right">
+            <input type="checkbox" name="" id="numbers" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="symbols">
+            <div class="left">Contains Symbols</div>
+          </label>
+          <div class="right">
+            <input type="checkbox" name="" id="symbols" />
+          </div>
+        </div>
+        <div class="row">
+          <button id="btn">Generate</button>
+        </div>
       </div>
-      <div class="input-box">
-        <input type="text" id="password" placeholder="Password" />
-        <i class="fa-regular fa-copy" onclick="copyPassword ()"></i>
-      </div>
-      <button onclick="createPassword()">
-        <i class="fa-solid fa-bolt"></i> Generate Password
-      </button>
     </div>
   </body>
   <script src="./index.js"></script>
